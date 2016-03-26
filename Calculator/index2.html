@@ -1,0 +1,88 @@
+<!-- 
+인라인으로 스타일 적용하기(태그내 스타일 적용)
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Wearable Web Basic Template" />
+
+    <title>Tizen Wearable Web Basic Application</title>
+
+	<!-- 외부문서 삽입형으로 CSS 적용 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <!--  <script src="js/main.js"></script> -->
+</head>
+
+<body>
+<!--TODO 1: 계산기 레이아웃 및 산술계산 구현  -->
+<form name="calculator" style='width: 100%; height:100%'>
+<!-- 계산기 출력부분  -->
+<table border="4" cellpadding="1" bordercode="#FFFFFF" bgcolor="#73B27B" cellspacing="2"
+width="100%" height="18%">
+	<tr>
+		<td>
+		<!-- TODO 2: 인라인으로 스타일 적용 -->
+			<input type="text" size="24" value="" name="ans" readonly
+			style="width:98%; height:80%; background:beige; color:black;
+			font-size: 16pt; text-align: left;"
+			>
+		</td>
+	</tr>
+</table>
+
+<!-- 버튼 구성 부분 -->
+<table border="4" cellpadding="1" cellspacing="2" bordercode="#FFFFFF" bgcolor="#73B27B" cellspacing="2"
+width="100%" height="82%">
+<!-- 7 8 9 /  -->
+<tr>
+<!-- TODO 3: 인라인으로 스타일 적용 -->
+	<td align="center"><input type="button" value="7" name="" onClick="document.calculator.ans.value+='7'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="8" name="" onClick="document.calculator.ans.value+='8'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="9" name="" onClick="document.calculator.ans.value+='9'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="/" name="" onClick="document.calculator.ans.value+='/'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+</tr>
+<!-- 4 5 6 * -->
+<tr>
+	<td align="center"><input type="button" value="4" name="" onClick="document.calculator.ans.value+='4'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="5" name="" onClick="document.calculator.ans.value+='5'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="6" name="" onClick="document.calculator.ans.value+='6'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="X" name="" onClick="document.calculator.ans.value+='*'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+</tr>
+<!-- 1 2 3 - -->
+<tr>
+	<td align="center"><input type="button" value="1" name="" onClick="document.calculator.ans.value+='1'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="2" name="" onClick="document.calculator.ans.value+='2'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="3" name="" onClick="document.calculator.ans.value+='3'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="-" name="" onClick="document.calculator.ans.value+='-'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+</tr>
+<!-- C 0 = + -->
+<tr>
+	<td align="center"><input type="button" value="C" name="" onClick="document.calculator.ans.value+='C'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="0" name="" onClick="document.calculator.ans.value+='0'"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="=" name="" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"
+	style="width:100%; height: 115%; font-size:18pt;"></td>
+	<td align="center"><input type="button" value="+" name="" onClick="document.calculator.ans.value+='+'"
+	style="width:100%; height: 115%; font-size:18pt;"></tdl>
+</tr>
+</table>
+</form>
+</body>
+
+</html>
