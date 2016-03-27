@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Circular UI</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 
+페이지 레이아웃
+
+ -->
+<body>
+<!-- TODO 1: 멀티페이지 구성하기
+페이지는 헤더와 컨텐츠, 푸터로 구성되어있습니다. -->
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Wearable UI</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<ul class="ui-listview">
+				<p>Hello World!</p>
+			</ul>
+		</div>
+		<footer class="ui-footer">
+			<!-- changePage(): 다른 페이지로 이동  -->
+			<button type="button" onclick="changePage()" class="ui-btn">Footer Button</button>
+		</footer>
+	</div>
+	<!-- 헤더 안에 더 버튼과 함게 레이아웃 구성 -->
+	<div class="ui-page" id="sub">
+		<header class="ui-header ui-has-more">
+			<h2 class = "ui-title">Sub Form</h2>
+			<button type="button" class="ui-more ui-icon-overflow">More Options</button>
+		</header>
+		<div class="ui-content">안년 타이벤 개발자!</div>
+<!-- 		<footer class="ui-footer"> -->
+		<footer class="ui-footer ui-botton-button" >
+			<!-- tau.back(): 이전 페이지로 이동 -->
+			<button type="button" onclick="tau.back()" class="ui-btn">Back Button</button>
+		</footer>
+	</div>
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="js/circle-helper.js"></script>
+	<script src="app.js"></script>
+	<script src="lowBatteryCheck.js"></script>
+</body>
+</html>

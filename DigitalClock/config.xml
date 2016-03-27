@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/DigitalClock" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="BHTFjDqjuP.DigitalClock" package="BHTFjDqjuP" required_version="2.3.1"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="icon.png"/>
+    <name>DigitalClock</name>
+    <tizen:profile name="wearable"/>
+    <tizen:setting hwkey-event="enable"/>
+    
+    <!-- 
+    TODO : 아이콘 이미지 변경하기
+    icon.png 파일을 애뮬레이터에서 캡처한 화면으로 바꾸기
+        애뮬레이터네에서 마우스 우클릭 >> Advance >> Screen shot >> icon.png로 저장 후 기존 icon.png파일 교체
+     
+    //--------------------------------------------------- 
+  	애플리케이션은 구동방식에 따라서 Watch App과 Watch Clock의 두종류로 분류
+  	
+  	Watch App:
+  	애플리케이션의 기본 타입
+  	설치 후 아이콘이 추다되며, 사용자가 아이콘을 클릭해서 실행하는 방식
+  	
+  	Watch Clock:
+  	홈 스크린(Home Screen)에서 동작하는 시계를 의미
+  	
+  	Watch Clock 애플리케이션 설치하기
+  	VM: 설정 >> 시계 >> 현재 앱 선택
+  	Gear: 설정 >> 디스플레이 >> 시계화면 꾸미기 >> 해당 앱 선택
+  	
+    TODO : 애플리케이션 구동 방식이 아니라 Watch Clock으로 구동하기
+        설정 >> 디스플레이 >> 시계화면 꾸미기  에서 확인가능-->
+    <tizen:category name="com.samsung.wmanager.WATCH_CLOCK" />
+</widget>
