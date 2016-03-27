@@ -1,0 +1,22 @@
+/* TODO 2: 배경화면의 색상과 화면의 크기ㅣ 설정 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0px auto;
+	background-color: #FFFFFF;
+}
+
+/* TODO 3: Canvas가 스크롤되지 않도록 고정   */
+canvas {
+	display:block; 
+}
+
+.container{
+	display: block;
+	box-sizing: border-box; 
+	-wetkit-box-sizing: border-box;
+	height:100%;
+}
